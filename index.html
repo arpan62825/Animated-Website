@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
@@ -14,6 +18,10 @@
       href="https://fonts.cdnfonts.com/css/nimbus-sans-l"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Animated Website</title>
   </head>
@@ -22,32 +30,32 @@
       <div class="home">
         <div class="nav">
           <div class="nleft">
-            <a class="hover-effect" href="#">Home</a>
-            <a class="hover-effect" href="#">Pricing</a>
-            <a class="hover-effect" href="#">Products</a>
+            <a class="hover-effect nlink" href="#">Home</a>
+            <a class="hover-effect nlink" href="#">Pricing</a>
+            <a class="hover-effect nlink" href="#">Products</a>
           </div>
-          <a href="#" class="center-tag">Made by <span>Arpan</span></a>
+          <a href="#" class="center-tag nlink">Made by <span>Arpan</span></a>
           <div class="nright">
-            <a class="hover-effect" href="#">Our Journey</a>
+            <a class="hover-effect nlink" href="#">Our Journey</a>
           </div>
         </div>
         <div class="hero">
-          <div class="sustain">
+          <div class="sustain animation-2">
             <h4>01.</h4>
             <h2>Sustainability</h2>
             <p>
               Committed to sustainability, eco-friendly choices for a better
               tomorrow.
             </p>
-            <div class="sus-image-wrapper">
+            <div class="sus-image-wrapper image-effect">
               <img src="images/pinkgreenplant.jpg" alt="Pink green plant" />
             </div>
           </div>
-          <div class="ephemeral">
-            <h1>
-              Ephemeral <br />
-              Equilibrium.
-            </h1>
+          <div class="ephemeral animation-2">
+            <div class="heading">
+              <h1>Ephemeral</h1>
+              <h1>Equilibrium.</h1>
+            </div>
             <div class="ephem-image-wrapper">
               <img src="images/pinkplant.jpg" alt="" />
               <p>
@@ -56,69 +64,82 @@
               </p>
             </div>
           </div>
-          <div class="visit-gallery">
+          <div class="visit-gallery animation-2">
             <i class="fa-solid fa-angle-down"></i>
             <p>Visit our gallery</p>
           </div>
         </div>
-        <div class="motive">
-          <h2>OUR MOTIVE</h2>
-          <div class="speech">
-            <p>
-              Driven by a vision for a healthier planet,
-              <span><img src="images/bluegirl.jpg" alt="" /></span>
-              we embrace sustainability in every step.
-              <span><img src="images/shaljam.jpg" alt="" /></span> From
-              eco-conscious choices to reducing our carbon footprint, we empower
-              a future where people and nature thrive in harmony.
-              <span><img src="images/grass.jpg" alt="" /></span> Together, we
-              build tomorrow.
-            </p>
-          </div>
-        </div>
-        <div class="synergy-harmony">
-          <div class="synergy-image-wrapper">
-            <img src="images/sea.jpg" alt="Sea" />
-            <h1>Synergy</h1>
-            <p>
-              Unified efforts create impactful solutions, driving progress
-              through collective collaboration.
-            </p>
-          </div>
-          <div class="harmony-image-wrapper">
-            <img src="images/cloud.jpg" alt="Cloud" />
-            <h1>Harmony</h1>
-            <p>
-              Striving for balance, aligning human progress with nature’s
-              rhythms.
-            </p>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-image-wrapper">
-            <img src="images/bottle.jpg" alt="Bottle of goodness" />
-          </div>
-          <div class="product-description">
-            <h1>Biodegradable</h1>
-            <h1>packaging</h1>
-            <p>
-              Biodegradable packaging that vanishes into nature, leaving no
-              trace behind.
-            </p>
-          </div>
-        </div>
-        <div class="think-of-future ">
-          <div class="box">
-            <h1>Think of future.</h1>
-            <div class="join-movement">
-              <p>Join the movement</p>
-            </div>
-          </div>
-          <video src="images/back.mp4" autoplay muted loop class="video"></video>
+      </div>
+      <div class="motive">
+        <h2>OUR MOTIVE</h2>
+        <div class="speech">
+          <p>
+            Driven by a vision for a healthier planet,
+            <span><img src="images/bluegirl.jpg" alt="" /></span>
+            we embrace sustainability in every step.
+            <span><img src="images/shaljam.jpg" alt="" /></span> From
+            eco-conscious choices to reducing our carbon footprint, we empower a
+            future where people and nature thrive in harmony.
+            <span><img src="images/grass.jpg" alt="" /></span> Together, we
+            build tomorrow.
+          </p>
         </div>
       </div>
+      <div class="synergy-harmony">
+        <div class="synergy-image-wrapper image-effect">
+          <img src="images/sea.jpg" alt="Sea" />
+          <h1>Synergy</h1>
+          <p>
+            Unified efforts create impactful solutions, driving progress through
+            collective collaboration.
+          </p>
+        </div>
+        <div class="harmony-image-wrapper image-effect">
+          <img src="images/cloud.jpg" alt="Cloud" />
+          <h1>Harmony</h1>
+          <p>
+            Striving for balance, aligning human progress with nature’s rhythms.
+          </p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-image-wrapper">
+          <img src="images/bottle.jpg" alt="Bottle of goodness" />
+          <img src="images/bottle2.jpg" alt="Bottle of goodness 2" />
+        </div>
+        <div class="product-description">
+          <h1>Biodegradable</h1>
+          <h1>packaging</h1>
+          <p>
+            Biodegradable packaging that vanishes into nature, leaving no trace
+            behind.
+          </p>
+        </div>
+      </div>
+      <div class="think-of-future">
+        <div class="box">
+          <h1>Think of future.</h1>
+          <div class="join-movement">
+            <p>Join the movement</p>
+          </div>
+        </div>
+        <video src="images/back.mp4" autoplay muted loop class="video"></video>
+      </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

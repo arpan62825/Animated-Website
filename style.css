@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nimbus";
+  font-family: "NimbusL";
 }
 
 html,
@@ -37,9 +37,11 @@ body {
 }
 
 .nav a {
+  font-family: "Nimbus";
   color: black;
   font-weight: 800;
   text-decoration: none;
+  display: inline-block;
 }
 
 .nleft {
@@ -75,6 +77,8 @@ body {
 }
 
 .nav a span {
+  font-family: "Nimbus";
+  display: inline-block;
   padding: 0 0.1rem;
   background: linear-gradient(
     to bottom,
@@ -111,18 +115,24 @@ body {
   overflow: hidden;
 }
 
+.sustain h4,
+.sustain h2 {
+  font-family: "Nimbus";
+}
+
 .sustain p {
+  font-family: "Nimbus";
   opacity: 50%;
   padding: 0.8rem 0;
 }
 
 .sus-image-wrapper img {
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 160%;
-  height: 160%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: bottom;
 }
@@ -134,23 +144,35 @@ body {
   margin-right: 5rem;
 }
 
-.ephemeral h1 {
+.ephemeral .heading {
   position: absolute;
-  top: -13%;
+  top: -15%;
   left: -10%;
-  font-size: 5.5rem;
-  font-weight: 600;
-  line-height: 0.8;
-  font-family: NimbusL, sans-serif;
+  line-height: 0.9;
   letter-spacing: -3px;
+  z-index: 999 !important;
+}
+
+.heading h1 {
+  font-family: "NimbusL";
+  font-size: 5.5rem;
+  z-index: 2;
+}
+
+.ephem-image-wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 5;
 }
 
 .ephem-image-wrapper img {
   width: 100%;
   height: 100%;
+  z-index: -1 !important;
 }
 
 .ephem-image-wrapper p {
+  font-family: "Nimbus";
   width: 50%;
   font-size: 1.4rem;
   padding-top: 2rem;
@@ -158,7 +180,7 @@ body {
 }
 
 .visit-gallery {
-  margin-top: 5rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,10 +209,12 @@ body {
 }
 
 .motive h2 {
+  font-family: "Nimbus";
   opacity: 0.5;
 }
 
 .motive p {
+  font-family: "Nimbus";
   font-size: 2.2rem;
   text-align: right;
   width: 85%;
@@ -230,7 +254,6 @@ body {
 .harmony-image-wrapper {
   width: 23rem;
   min-height: 36rem;
-  background-color: #333;
 }
 
 .synergy-image-wrapper img,
@@ -281,7 +304,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 70%;
+  object-position: 50% 50%;
 }
 
 .product-description {
@@ -302,7 +325,6 @@ body {
 
 .think-of-future {
   position: relative;
-  z-index: 1;
   margin-top: 10vh;
   width: 100vw;
   height: 100vh;
@@ -310,7 +332,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .box {
