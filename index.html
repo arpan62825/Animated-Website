@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="images/pinkplant.jpg" as="image" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css"
@@ -48,7 +49,11 @@
               tomorrow.
             </p>
             <div class="sus-image-wrapper image-effect">
-              <img src="images/pinkgreenplant.jpg" alt="Pink green plant" />
+              <img
+                src="images/pinkgreenplant.jpg"
+                alt="Pink green plant"
+                loading="lazy"
+              />
             </div>
           </div>
           <div class="ephemeral animation-2">
@@ -57,7 +62,7 @@
               <h1>Equilibrium.</h1>
             </div>
             <div class="ephem-image-wrapper">
-              <img src="images/pinkplant.jpg" alt="" />
+              <img src="images/pinkplant.jpg" alt="Pink plant" loading="lazy" />
               <p>
                 Committed to sustainability, eco-friendly choices for a better
                 tomorrow.
@@ -75,19 +80,25 @@
         <div class="speech">
           <p>
             Driven by a vision for a healthier planet,
-            <span><img src="images/bluegirl.jpg" alt="" /></span>
+            <span
+              ><img src="images/bluegirl.jpg" alt="Blue girl" loading="lazy"
+            /></span>
             we embrace sustainability in every step.
-            <span><img src="images/shaljam.jpg" alt="" /></span> From
-            eco-conscious choices to reducing our carbon footprint, we empower a
-            future where people and nature thrive in harmony.
-            <span><img src="images/grass.jpg" alt="" /></span> Together, we
-            build tomorrow.
+            <span
+              ><img src="images/shaljam.jpg" alt="Onion" loading="lazy"
+            /></span>
+            From eco-conscious choices to reducing our carbon footprint, we
+            empower a future where people and nature thrive in harmony.
+            <span
+              ><img src="images/grass.jpg" alt="Grass" loading="lazy"
+            /></span>
+            Together, we build tomorrow.
           </p>
         </div>
       </div>
       <div class="synergy-harmony">
         <div class="synergy-image-wrapper image-effect">
-          <img src="images/sea.jpg" alt="Sea" />
+          <img src="images/sea.jpg" alt="Sea" loading="lazy" />
           <h1>Synergy</h1>
           <p>
             Unified efforts create impactful solutions, driving progress through
@@ -95,7 +106,7 @@
           </p>
         </div>
         <div class="harmony-image-wrapper image-effect">
-          <img src="images/cloud.jpg" alt="Cloud" />
+          <img src="images/cloud.jpg" alt="Cloud" loading="lazy" />
           <h1>Harmony</h1>
           <p>
             Striving for balance, aligning human progress with nature’s rhythms.
@@ -104,8 +115,16 @@
       </div>
       <div class="product">
         <div class="product-image-wrapper">
-          <img src="images/bottle.jpg" alt="Bottle of goodness" />
-          <img src="images/bottle2.jpg" alt="Bottle of goodness 2" />
+          <img
+            src="images/bottle.jpg"
+            alt="Bottle of goodness"
+            loading="lazy"
+          />
+          <img
+            src="images/bottle2.jpg"
+            alt="Bottle of goodness 2"
+            loading="lazy"
+          />
         </div>
         <div class="product-description">
           <h1>Biodegradable</h1>
@@ -123,7 +142,14 @@
             <p>Join the movement</p>
           </div>
         </div>
-        <video src="images/back.mp4" autoplay muted loop class="video"></video>
+        <video
+          src="images/back.mp4"
+          preload="none"
+          autoplay
+          muted
+          loop
+          class="video"
+        ></video>
       </div>
     </div>
     <script
